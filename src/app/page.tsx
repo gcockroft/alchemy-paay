@@ -6,8 +6,9 @@ export default function Home() {
   return (
     <main>
       <Head>
-        Home
+        <title>tab title</title>
       </Head>
+      <h1>Hello world!</h1>
     </main>
   )
 }
