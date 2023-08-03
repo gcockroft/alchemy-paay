@@ -6,9 +6,15 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>tab title</title>
+        <title>Landing Page</title>
       </Head>
-      <h1>Hello world!</h1>
+      <h1>Waduppp! Welcome to Alchemy Paay</h1>
+      <p>
+        <Link href="/login">Login Page</Link>
+      </p>
+      <p>
+        <Link href="/create-account">Create Account Page</Link>      
+      </p>
     </main>
   )
 }
