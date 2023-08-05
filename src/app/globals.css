@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background: rgb(255, 255, 255);
+  --font-size-h1: 80px;
+  --font-size-h2: 64px;
+  --font-size-pressable: 24px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +17,15 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
 }

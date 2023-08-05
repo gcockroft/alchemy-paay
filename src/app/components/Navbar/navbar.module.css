@@ -1,0 +1,7 @@
+.navbar {
+  background-color: #E2E8F0;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+}
