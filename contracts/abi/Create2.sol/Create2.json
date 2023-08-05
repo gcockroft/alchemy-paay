@@ -1,0 +1,40 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Create2EmptyBytecode",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Create2FailedDeployment",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "needed",
+          "type": "uint256"
+        }
+      ],
+      "name": "Create2InsufficientBalance",
+      "type": "error"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220b6969c991f51a1a6e6ecf90502289916ac87866d538c0313d21ed24052be7c1a64736f6c63430008140033",
+    "sourceMap": "495:3877:40:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;495:3877:40;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220b6969c991f51a1a6e6ecf90502289916ac87866d538c0313d21ed24052be7c1a64736f6c63430008140033",
+    "sourceMap": "495:3877:40:-:0;;;;;;;;",
+    "linkReferences": {}
+  }
+}

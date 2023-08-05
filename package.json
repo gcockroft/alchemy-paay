@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@alchemy/aa-core": "^0.1.0-alpha.19",
     "@simplewebauthn/server": "^7.4.0",
     "@simplewebauthn/typescript-types": "^7.4.0",
     "@types/react": "18.2.18",

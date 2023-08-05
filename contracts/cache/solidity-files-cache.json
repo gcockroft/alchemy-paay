@@ -1,0 +1,2398 @@
+{
+  "_format": "ethers-rs-sol-cache-2",
+  "files": {
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol": {
+      "lastModificationDate": 1689048393696,
+      "contentHash": "a53a173b72742916b9c1cfef610f64b1",
+      "sourceName": "lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "BaseAccount": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "BaseAccount.sol/BaseAccount.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/core/EntryPoint.sol": {
+      "lastModificationDate": 1689048393698,
+      "contentHash": "ad550e84f21c0a82e53abdca70feafee",
+      "sourceName": "lib/account-abstraction/contracts/core/EntryPoint.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/core/NonceManager.sol",
+        "lib/account-abstraction/contracts/core/SenderCreator.sol",
+        "lib/account-abstraction/contracts/core/StakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IPaymaster.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "lib/account-abstraction/contracts/utils/Exec.sol",
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "EntryPoint": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "EntryPoint.sol/EntryPoint.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/core/Helpers.sol": {
+      "lastModificationDate": 1689048393698,
+      "contentHash": "3cbc58efa815f026e5e180817b65c653",
+      "sourceName": "lib/account-abstraction/contracts/core/Helpers.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {}
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/core/NonceManager.sol": {
+      "lastModificationDate": 1689048393698,
+      "contentHash": "6a3c752314494381d38f83abba1bdba4",
+      "sourceName": "lib/account-abstraction/contracts/core/NonceManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "NonceManager": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "NonceManager.sol/NonceManager.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/core/SenderCreator.sol": {
+      "lastModificationDate": 1689048393698,
+      "contentHash": "4910181341b8875940c6ea89500377a0",
+      "sourceName": "lib/account-abstraction/contracts/core/SenderCreator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "SenderCreator": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SenderCreator.sol/SenderCreator.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/core/StakeManager.sol": {
+      "lastModificationDate": 1689048393698,
+      "contentHash": "613d8c20b990bcf8cf2131ae2130a2c8",
+      "sourceName": "lib/account-abstraction/contracts/core/StakeManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "StakeManager": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StakeManager.sol/StakeManager.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/interfaces/IAccount.sol": {
+      "lastModificationDate": 1689048393698,
+      "contentHash": "6d787a742dcf67af8bebad8a8db7b78e",
+      "sourceName": "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "IAccount": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IAccount.sol/IAccount.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/interfaces/IAggregator.sol": {
+      "lastModificationDate": 1689048393698,
+      "contentHash": "70c22a1f7e8ee0bd97fcabb493c4fca6",
+      "sourceName": "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "IAggregator": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IAggregator.sol/IAggregator.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/interfaces/IEntryPoint.sol": {
+      "lastModificationDate": 1689048393699,
+      "contentHash": "f88a97ac988a378551551be9ea4ee65e",
+      "sourceName": "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "IEntryPoint": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IEntryPoint.sol/IEntryPoint.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/interfaces/INonceManager.sol": {
+      "lastModificationDate": 1689048393699,
+      "contentHash": "58293337a68c401ac395a955ab972702",
+      "sourceName": "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "INonceManager": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "INonceManager.sol/INonceManager.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/interfaces/IPaymaster.sol": {
+      "lastModificationDate": 1689048393699,
+      "contentHash": "4737c1fae42666f1b91fdac6a612076b",
+      "sourceName": "lib/account-abstraction/contracts/interfaces/IPaymaster.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "IPaymaster": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IPaymaster.sol/IPaymaster.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/interfaces/IStakeManager.sol": {
+      "lastModificationDate": 1689048393699,
+      "contentHash": "e5c534a14fbf384a02ed5f007d54b1f0",
+      "sourceName": "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "IStakeManager": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IStakeManager.sol/IStakeManager.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/interfaces/UserOperation.sol": {
+      "lastModificationDate": 1689048393699,
+      "contentHash": "e605ec59ee4889ea6ef8b5332e7da0d8",
+      "sourceName": "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/Helpers.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "UserOperationLib": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "UserOperation.sol/UserOperationLib.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/samples/SimpleAccount.sol": {
+      "lastModificationDate": 1689074168218,
+      "contentHash": "7fbaabbbd42eb177123c893a06334c5d",
+      "sourceName": "lib/account-abstraction/contracts/samples/SimpleAccount.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/BaseAccount.sol",
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "lib/account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "SimpleAccount": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SimpleAccount.sol/SimpleAccount.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol": {
+      "lastModificationDate": 1689073811293,
+      "contentHash": "ed35dede516a3e24504ec9069b86851c",
+      "sourceName": "lib/account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.12",
+      "artifacts": {
+        "TokenCallbackHandler": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "TokenCallbackHandler.sol/TokenCallbackHandler.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/account-abstraction/contracts/utils/Exec.sol": {
+      "lastModificationDate": 1689048393704,
+      "contentHash": "4e8f2b61ef7b1a60ae834edb15752735",
+      "sourceName": "lib/account-abstraction/contracts/utils/Exec.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.5, <0.9.0",
+      "artifacts": {
+        "Exec": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Exec.sol/Exec.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1689048546832,
+      "contentHash": "9febff9d09f18af5306669dc276c4c43",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1689048558915,
+      "contentHash": "e5c392424446b26570ae9d2dc9dc2737",
+      "sourceName": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Ownable": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol": {
+      "lastModificationDate": 1689048558920,
+      "contentHash": "0c4e6627e77946553732c46b4b8a6068",
+      "sourceName": "lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC777Recipient": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC777Recipient.sol/IERC777Recipient.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol": {
+      "lastModificationDate": 1689048558920,
+      "contentHash": "5a6c0e4f26c1e08b3db656383dbad29d",
+      "sourceName": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC1822Proxiable": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "draft-IERC1822.sol/IERC1822Proxiable.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1689048558920,
+      "contentHash": "0850a395eb2daa19d891c60fcb8fb9bf",
+      "sourceName": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC1155Errors": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "draft-IERC6093.sol/IERC1155Errors.json"
+        },
+        "IERC20Errors": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "draft-IERC6093.sol/IERC20Errors.json"
+        },
+        "IERC721Errors": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "draft-IERC6093.sol/IERC721Errors.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol": {
+      "lastModificationDate": 1689048558926,
+      "contentHash": "3c633e122375c8237353ab6fea0cedb3",
+      "sourceName": "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC1967Proxy": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC1967Proxy.sol/ERC1967Proxy.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol": {
+      "lastModificationDate": 1689048558926,
+      "contentHash": "fa3ba46be30c66ef629674c3ef38ad19",
+      "sourceName": "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "ERC1967Utils": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC1967Utils.sol/ERC1967Utils.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/proxy/Proxy.sol": {
+      "lastModificationDate": 1689048558926,
+      "contentHash": "033fa24267f630f139865c7852c43425",
+      "sourceName": "lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Proxy": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Proxy.sol/Proxy.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol": {
+      "lastModificationDate": 1689048558927,
+      "contentHash": "77bcd1ac8f6d5416306c24857312dfda",
+      "sourceName": "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IBeacon": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IBeacon.sol/IBeacon.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1689048558927,
+      "contentHash": "504b30ee5615532156a10f2a8222c664",
+      "sourceName": "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Initializable": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Initializable.sol/Initializable.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol": {
+      "lastModificationDate": 1689048558927,
+      "contentHash": "3744560b4170b14c21e0852925016cee",
+      "sourceName": "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "UUPSUpgradeable": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "UUPSUpgradeable.sol/UUPSUpgradeable.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/security/Pausable.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "9cb2f9c769f6693928600911d350f237",
+      "sourceName": "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Pausable": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Pausable.sol/Pausable.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "1f0554f4de16bd4df3c40c85c4fa340a",
+      "sourceName": "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ReentrancyGuard": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ReentrancyGuard.sol/ReentrancyGuard.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "8e8f90bb810681a397bc65272924c5d3",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC1155": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC1155.sol/ERC1155.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "164c3a4da222bf2d8471a0e0f21ce1ba",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC1155": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC1155.sol/IERC1155.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "8c192ef6a231bc27f3b81bcd09659929",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC1155Receiver": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC1155Receiver.sol/IERC1155Receiver.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Burnable.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "17b83094a7cca4fc5352e72cd6f7a15d",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC1155Burnable": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC1155Burnable.sol/ERC1155Burnable.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Pausable.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "207b8635bc8f00a2ad90790ddeca4774",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC1155Pausable": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC1155Pausable.sol/ERC1155Pausable.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Supply.sol": {
+      "lastModificationDate": 1689048558928,
+      "contentHash": "a7b0c3b8fe5dc9df12e6c2f6db8ae866",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC1155Supply": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC1155Supply.sol/ERC1155Supply.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1689048558929,
+      "contentHash": "be2ee634fafd189c0453d899168db318",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC1155MetadataURI": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC1155MetadataURI.sol/IERC1155MetadataURI.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1689048558931,
+      "contentHash": "6f78cd347e9ab88a4571eba797e6da95",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC721Receiver": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC721Receiver.sol/IERC721Receiver.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/Address.sol": {
+      "lastModificationDate": 1689048558932,
+      "contentHash": "ec06e73024a8f259b22f10df38a5dbf6",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Address": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Address.sol/Address.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/Arrays.sol": {
+      "lastModificationDate": 1689048558932,
+      "contentHash": "301d91e2865b79f341a9fc52e790404e",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Arrays": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Arrays.sol/Arrays.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+      "lastModificationDate": 1689048558932,
+      "contentHash": "60e42aac9f34cccee5620051518cc8ab",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Context": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Context.sol/Context.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/Create2.sol": {
+      "lastModificationDate": 1689048558932,
+      "contentHash": "6ed611ff82baef7ca3aee260466f1e75",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Create2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Create2": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Create2.sol/Create2.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol": {
+      "lastModificationDate": 1689048558933,
+      "contentHash": "11f9520ad7dfee75a24725ac373490be",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "StorageSlot": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StorageSlot.sol/StorageSlot.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1689048558933,
+      "contentHash": "69d95862d48c81d98baf71c42ac5ab51",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Strings": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Strings.sol/Strings.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1689048558933,
+      "contentHash": "88cb3539203243a09a8bf14ee53e5c01",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ECDSA": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ECDSA.sol/ECDSA.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol": {
+      "lastModificationDate": 1689048558933,
+      "contentHash": "b6438f1d66ed0cf51713112247cede95",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "MessageHashUtils": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "MessageHashUtils.sol/MessageHashUtils.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1689048558933,
+      "contentHash": "5fa7964ad06c705f7fea435a672a3714",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC165": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC165.sol/ERC165.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1689048558934,
+      "contentHash": "7b993c72b0cd067d32f49b745137a2cb",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IERC165": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC165.sol/IERC165.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1689048558934,
+      "contentHash": "9d3e080db96d19d8a7bbf40036f6008c",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Math": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Math.sol/Math.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1689048558934,
+      "contentHash": "0e0a174761ec04cecc398c1cba0d1a88",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "SignedMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SignedMath.sol/SignedMath.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/accounts/PasskeyAccount.sol": {
+      "lastModificationDate": 1690112547504,
+      "contentHash": "de877dfdbe0be5107e753148074ae988",
+      "sourceName": "src/accounts/PasskeyAccount.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/BaseAccount.sol",
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "lib/account-abstraction/contracts/samples/SimpleAccount.sol",
+        "lib/account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol",
+        "src/accounts/PasskeyConfiguration.sol",
+        "src/accounts/Secp256r1.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "PasskeyAccount": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "PasskeyAccount.sol/PasskeyAccount.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/accounts/PasskeyAccountFactory.sol": {
+      "lastModificationDate": 1689689715505,
+      "contentHash": "116df188d49556366f32f1e72e73dff7",
+      "sourceName": "src/accounts/PasskeyAccountFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/BaseAccount.sol",
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "lib/account-abstraction/contracts/samples/SimpleAccount.sol",
+        "lib/account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Create2.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol",
+        "src/accounts/PasskeyAccount.sol",
+        "src/accounts/PasskeyConfiguration.sol",
+        "src/accounts/Secp256r1.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "PasskeyAccountFactory": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "PasskeyAccountFactory.sol/PasskeyAccountFactory.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/accounts/PasskeyConfiguration.sol": {
+      "lastModificationDate": 1688988211199,
+      "contentHash": "c2b20f3299b823ef1c5d12e74ebc9315",
+      "sourceName": "src/accounts/PasskeyConfiguration.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {}
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/accounts/Secp256r1.sol": {
+      "lastModificationDate": 1688988080825,
+      "contentHash": "d80fdbb2fb0792a05274e8642277b9d8",
+      "sourceName": "src/accounts/Secp256r1.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ModExp": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Secp256r1.sol/ModExp.json"
+        },
+        "Secp256r1": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Secp256r1.sol/Secp256r1.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/badges/AlchemyBadge.sol": {
+      "lastModificationDate": 1688959710609,
+      "contentHash": "9aa54315886874127d38a416c2d4c896",
+      "sourceName": "src/badges/AlchemyBadge.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {}
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/badges/AlchemyBadges.sol": {
+      "lastModificationDate": 1689074975530,
+      "contentHash": "4b1b7490c5eca54df8499fefd6c770cd",
+      "sourceName": "src/badges/AlchemyBadges.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "src/badges/AlchemyBadge.sol",
+        "src/badges/IAlchemyBadges.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "AlchemyBadges": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "AlchemyBadges.sol/AlchemyBadges.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/badges/AlchemyBadgesOperator.sol": {
+      "lastModificationDate": 1688987593322,
+      "contentHash": "e296da6c7ee4cff28da73b0c07f1a7a1",
+      "sourceName": "src/badges/AlchemyBadgesOperator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "src/badges/AlchemyBadge.sol",
+        "src/badges/IAlchemyBadges.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "AlchemyBadgesOperator": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "AlchemyBadgesOperator.sol/AlchemyBadgesOperator.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/badges/IAlchemyBadges.sol": {
+      "lastModificationDate": 1688987593322,
+      "contentHash": "016870372deafa4f595c2af94b745df5",
+      "sourceName": "src/badges/IAlchemyBadges.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "src/badges/AlchemyBadge.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IAlchemyBadges": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IAlchemyBadges.sol/IAlchemyBadges.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/test/AlchemyBadges.t.sol": {
+      "lastModificationDate": 1689761940615,
+      "contentHash": "3fb7b1196ea3472665e3850b0fc7eb0b",
+      "sourceName": "src/test/AlchemyBadges.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "src/badges/AlchemyBadge.sol",
+        "src/badges/AlchemyBadges.sol",
+        "src/badges/IAlchemyBadges.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "AlchemyBadgesTest": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "AlchemyBadges.t.sol/AlchemyBadgesTest.json"
+        },
+        "Vm": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "AlchemyBadges.t.sol/Vm.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/test/AlchemyBadgesOperator.t.sol": {
+      "lastModificationDate": 1688960292613,
+      "contentHash": "bffacae8ec77a453a07c7931ebcf8805",
+      "sourceName": "src/test/AlchemyBadgesOperator.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/ERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Arrays.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "src/badges/AlchemyBadge.sol",
+        "src/badges/AlchemyBadges.sol",
+        "src/badges/AlchemyBadgesOperator.sol",
+        "src/badges/IAlchemyBadges.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "AlchemyBadgesOperatorTest": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "AlchemyBadgesOperator.t.sol/AlchemyBadgesOperatorTest.json"
+        },
+        "Vm": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "AlchemyBadgesOperator.t.sol/Vm.json"
+        }
+      }
+    },
+    "/Users/rohanthomare/Developer/alchemy/repo/alchemy-fam/packages/contracts/src/test/PasskeyAccount.t.sol": {
+      "lastModificationDate": 1690112490324,
+      "contentHash": "eb2d922238ab6b6b1e161b55d8c6ba09",
+      "sourceName": "src/test/PasskeyAccount.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/BaseAccount.sol",
+        "lib/account-abstraction/contracts/core/EntryPoint.sol",
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/core/NonceManager.sol",
+        "lib/account-abstraction/contracts/core/SenderCreator.sol",
+        "lib/account-abstraction/contracts/core/StakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IPaymaster.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "lib/account-abstraction/contracts/samples/SimpleAccount.sol",
+        "lib/account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol",
+        "lib/account-abstraction/contracts/utils/Exec.sol",
+        "lib/ds-test/src/test.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+        "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Create2.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol",
+        "src/accounts/PasskeyAccount.sol",
+        "src/accounts/PasskeyAccountFactory.sol",
+        "src/accounts/PasskeyConfiguration.sol",
+        "src/accounts/Secp256r1.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "PasskeyAccountTest": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "PasskeyAccount.t.sol/PasskeyAccountTest.json"
+        },
+        "Vm": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "PasskeyAccount.t.sol/Vm.json"
+        }
+      }
+    }
+  }
+}
