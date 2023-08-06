@@ -1,0 +1,10 @@
+.get_started {
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 5px 5px 3px #475569;
+  font-weight: 600;
+  font-size: var(--font-size-pressable);
+  padding: 15px;
+  margin: 15px;
+}

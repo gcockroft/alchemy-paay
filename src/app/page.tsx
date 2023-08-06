@@ -1,20 +1,23 @@
-import Image from 'next/image'
-import Head from 'next/head'
-import Link from 'next/link'
+'use client';
+import Button from '@/app/components/button';
+import Image from 'next/image';
+import styles from './Home.module.css';
+import { useRef } from 'react';
+import logo from './images/alchemy-paay-logo.png';
 
 export default function Home() {
+  const getStartedRef = 'home/send';
+
+  // Get started button onClick() will trigger onboarding / login flow.
   return (
     <main>
-      <Head>
-        <title>Landing Page</title>
-      </Head>
-      <h1>Waduppp! Welcome to Alchemy Paay</h1>
-      <p>
-        <Link href="/login">Login Page</Link>
-      </p>
-      <p>
-        <Link href="/create-account">Create Account Page</Link>      
-      </p>
+      <Image width={450} src={logo} alt={''}/>
+      <Button 
+        className={styles.get_started} 
+        label='GET STARTED' 
+        onClick={() => console.log('We up in this')} 
+        href={getStartedRef}
+      />
     </main>
   )
 }
