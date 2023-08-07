@@ -1,4 +1,8 @@
 .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: #E2E8F0;
   position: fixed;
   overflow: hidden;

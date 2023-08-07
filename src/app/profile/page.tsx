@@ -8,7 +8,7 @@ export default function Profile() {
       <Head>
         <title>This is the Profile Page</title>
       </Head>
-      <Link href='/home'>Back to home</Link>
+      <Link href='/home/send'>Back to home</Link>
       <h1>View profile</h1>
     </main>
   )
