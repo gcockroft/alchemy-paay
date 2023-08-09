@@ -9,4 +9,9 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    minHeight: {
+      '1/2': '50%',
+    }
+  }
 }

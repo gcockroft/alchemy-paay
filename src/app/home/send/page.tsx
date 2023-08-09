@@ -1,10 +1,9 @@
 'use client';
 import Link from "next/link";
-import Head from "next/head";
-import React, { useEffect, useState } from "react";
-import Navbar from "@/app/components/Navbar/navbar";
+import React, { useEffect, useRef, useState } from "react";
 import HomeView from "@/app/views/SendInput/HomeView";
 import FriendCard from "@/app/components/friendCard";
+import Keypad from "@/app/components/Keypad/keypad";
 
 const STATUS_NONE = 'none';
 const STATUS_SEARCH = 'search';
@@ -29,6 +28,10 @@ export function Send() {
     setAmount(parseFloat(event.currentTarget.value));
   }
 
+  const keypadHandler = (num: number) => {
+    console.log("pressed: " + num);
+    setAmount(amount ? parseInt(amount.toString() + num.toString()) : num);
+  }
 
   /* 
    * DATABASE SEARCH LOGIC HERE ON QUERY LISTEN.
@@ -51,7 +54,6 @@ export function Send() {
    * Check amountn against balance here.
    */
   const chooseAmount = () => {
-
     setAmount(amount);
     setStatus(STATUS_CONFIRM);
   }
@@ -118,7 +120,8 @@ export function Send() {
             <div className="main-modal">
               <p className="modal-header">Choose amount</p>
               <div className="modal-body-container">
-                <input type="number" className="font-bold text-6xl focus:outline-none text-center" placeholder="0" min="0" onChange={amountHandler}></input>
+                <input type="number" className="font-bold text-5xl focus:outline-none text-center" placeholder="0" min="0" onChange={amountHandler} value={amount}></input>
+                <Keypad onClick={keypadHandler} />
                 <button className="btn-primary" onClick={chooseAmount}>Send</button>
               </div>
             </div>
