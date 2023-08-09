@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import Navbar from "@/app/components/Navbar/navbar";
-import HomeView from "@/app/components/SendInput/initSend";
+import HomeView from "@/app/views/SendInput/HomeView";
 import FriendCard from "@/app/components/friendCard";
 
 const STATUS_NONE = 'none';
@@ -16,32 +16,43 @@ const STATUS_CONFIRMED = 'confirmed';
 export function Send() {
   const [modalVisible, setModalVisible] = useState(false);
   const [query, setQuery] = useState('');
+  const [amount, setAmount] = useState(0);
   const [user, setUser] = useState('');
   const [status, setStatus] = useState(STATUS_NONE);
+  const [balance, setBalance] = useState(80); // Add getBalance() contract logic here.
 
   const textHandler = (event: React.FormEvent<HTMLInputElement>) => {
     setQuery(event.currentTarget.value);
   }
 
-  /* UPDATES query SEARCH STATE.
-   * DATABASE SEARCH LOGIC HERE.
+  const amountHandler = (event: React.FormEvent<HTMLInputElement>) => {
+    setAmount(parseFloat(event.currentTarget.value));
+  }
+
+
+  /* 
+   * DATABASE SEARCH LOGIC HERE ON QUERY LISTEN.
    */
   useEffect(() => {
-    console.log(query);
-  }, [query])
+    console.log('user: ' + user);
+    console.log('query: ' + query);
+    console.log('amount: ' + amount);
+  }, [query, amount, user])
 
-  /*
-   * 
+  /* Selects a user searched from the database.
+   * Get to: address here for sending the transaction.
    */
   const selectUser = (user: string) => {
     setUser(user);
     setStatus(STATUS_CHOOSE_AMOUNT);
   }
 
-  /* 
-   *
+  /* Builds transaction object.
+   * Check amountn against balance here.
    */
   const chooseAmount = () => {
+
+    setAmount(amount);
     setStatus(STATUS_CONFIRM);
   }
 
@@ -75,69 +86,97 @@ export function Send() {
     setStatus(STATUS_NONE);
   }
 
+  // Contains all modal stages via state changes.
   const renderModal = () => {
     switch (status) {
-      case 'search':
+      case STATUS_SEARCH:
         return (
           <>
             <div className="modal-wrapper" onClick={() => {setModalVisible(false)}}/>
             <div className="main-modal">
-              <p className="modal-header">Send to</p>
-              <p className="text-sm text-gray-600">Choose a friend that you want to send USDC to.</p>
-              <input className='flex-1 text-base p-1 m-3 max-h-10 rounded-md bg-slate-200' type='text' placeholder='Search by name or address' onChange={textHandler}/>
+              <span className="modal-header">Send to</span>
+              <span className="text-sm text-gray-600 ml-3 mr-3">Choose a friend that you want to send USDC to.</span>
+              <input className='flex-1 text-base p-1 m-3 max-h-10 rounded-md bg-slate-200 focus:outline-none' type='text' placeholder='Search by name or address' onChange={textHandler}/>
               <div className='overflow-scroll m-3'>
                 <FriendCard name='Gareth' onClick={selectUser}/>
+                <FriendCard name='Keshav' onClick={selectUser}/>
+                <FriendCard name='Ava' onClick={selectUser}/>
                 <FriendCard name='Gareth' onClick={selectUser}/>
+                <FriendCard name='Keshav' onClick={selectUser}/>
+                <FriendCard name='Ava' onClick={selectUser}/>
                 <FriendCard name='Gareth' onClick={selectUser}/>
-                <FriendCard name='Gareth' onClick={selectUser}/>
-                <FriendCard name='Gareth' onClick={selectUser}/>
-                <FriendCard name='Gareth' onClick={selectUser}/>
-                <FriendCard name='Gareth' onClick={selectUser}/>
+                <FriendCard name='Keshav' onClick={selectUser}/>
+                <FriendCard name='Ava' onClick={selectUser}/>
               </div>
             </div>
           </>
         )
-      case 'choose-amount':
+      case STATUS_CHOOSE_AMOUNT:
         return (
           <>
             <div className="modal-wrapper" onClick={() => {setModalVisible(false)}}/>
             <div className="main-modal">
               <p className="modal-header">Choose amount</p>
-              <input></input>
-              <button className="btn-primary" onClick={chooseAmount}>Send</button>
+              <div className="modal-body-container">
+                <input type="number" className="font-bold text-6xl focus:outline-none text-center" placeholder="0" min="0" onChange={amountHandler}></input>
+                <button className="btn-primary" onClick={chooseAmount}>Send</button>
+              </div>
             </div>
           </>
         )
-      case 'confirm':
+      case STATUS_CONFIRM:
         return (
           <>
             <div className="modal-wrapper" onClick={() => {setModalVisible(false)}}/>
             <div className="main-modal">
-              <p className="modal-header">Confirm Tx</p>
-              <input></input>
+              <span className="modal-header">Confirm Tx</span>
+              <div className="flex h-1/4 flex-row items-center justify-between bg-slate-100 rounded-lg m-2 pl-3 pr-3">
+                <span>To: </span>
+                <span>{user}</span>
+              </div>
+              <div className="h-3/4 flex-col content-center justify-between bg-slate-100 rounded-lg m-2 mt-0">
+                <div className="h-1/3 flex flex-row items-center justify-between border-b border-slate-300 pl-3 pr-3">
+                  <span>Amount: </span>
+                  <span>{amount}</span>
+                </div>
+                <div className="h-1/3 flex flex-row items-center justify-between border-b border-slate-300 pl-3 pr-3">
+                  <span>Fee: </span>
+                  <span>{amount}</span>
+                </div>
+                <div className="h-1/3 flex flex-row items-center justify-between pl-3 pr-3">
+                  <span>Total:</span>
+                  <span>{amount}</span>
+                </div>
+              </div>
+              <div>
+
+              </div>
               <button className="btn-primary" onClick={confirmTx}>Confirm</button>
             </div>
           </>
         )
-      case 'sending':
+      case STATUS_SENDING:
         return (
           <>
             <div className="modal-wrapper" onClick={() => {setModalVisible(false)}}/>
             <div className="main-modal">
-              <p className="modal-header">Sending...</p>
-              <input></input>
-              <div className="spinner"></div>
+              <span className="modal-header">Sending...</span>
+              <span className="text-sm text-gray-600 ml-3 mr-3">You are sending {amount} USDC to @{user}.</span>
+              <div className="modal-body-container justify-center">
+                <div className="spinner"/>
+              </div>
             </div>
           </>
         )
-      case 'confirmed':
+      case STATUS_CONFIRMED:
         return (
           <>
             <div className="modal-wrapper" onClick={() => {setModalVisible(false)}}/>
             <div className="main-modal">
-              <p className="modal-header">Confirmed.</p>
-              <input></input>
-              <button className="btn-primary" onClick={closeModal}>Done</button>
+              <span className="modal-header">Confirmed.</span>
+              <div className="modal-body-container justify-end">
+                <button className="btn-primary" onClick={closeModal}>Done</button>
+              </div>
             </div>
           </>
         )
@@ -147,7 +186,9 @@ export function Send() {
 
   // Passes down setState so send button shows modal.
   const renderHome = () => {
-    return <HomeView showModal={() => {
+    return <HomeView 
+      balance={balance}
+      showModal={() => {
       setStatus(STATUS_SEARCH);
       setModalVisible(true);
     }} />

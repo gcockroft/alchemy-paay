@@ -8,8 +8,8 @@ interface FriendCardProps {
 
 const FriendCard: React.FC<FriendCardProps> = ({name, onClick}) => {
   return (
-    <div className="flex flex-row h-8 border border-l-0 border-r-0">
-      <p className="justify-self-start">{name}</p>
+    <div className="flex h-11 border-b border-l-0 border-r-0 content-center justify-between">
+      <span className="flex self-center pl-1">{name}</span>
       <button className="btn-small" onClick={() => onClick(name)}>Select</button>
     </div>
   )
